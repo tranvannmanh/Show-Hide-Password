@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/hide password</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background-color: #FFDE5D;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input_password">
+            <input id='demo' type="password" placeholder="Password" onfocus="this.value=''">
+            <input type="checkbox" name="password" id="show_hide" onclick="return togglePasswd()">Show
+        </div>
+    </div>
+
+    <script src="togglePasswd.js">
+
+    </script>
+</body>
+</html>
